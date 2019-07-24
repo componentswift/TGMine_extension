@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		0651EAD222E826E6007C31FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0651EAD022E826E6007C31FD /* Main.storyboard */; };
 		0651EAD422E826E7007C31FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0651EAD322E826E7007C31FD /* Assets.xcassets */; };
 		0651EAD722E826E7007C31FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0651EAD522E826E7007C31FD /* LaunchScreen.storyboard */; };
+		0651EB4322E82BDE007C31FD /* TGMine_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651EB4222E82BDE007C31FD /* TGMine_extension.swift */; };
+		0651EB4922E82C53007C31FD /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0651EB4722E82C52007C31FD /* CTMediator.m */; };
+		13929D082316565EDF48817F /* Pods_TGMine_extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1299C26EA91DECAE45A74C9 /* Pods_TGMine_extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,13 @@
 		0651EAD322E826E7007C31FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0651EAD622E826E7007C31FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0651EAD822E826E7007C31FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0651EB4222E82BDE007C31FD /* TGMine_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGMine_extension.swift; sourceTree = "<group>"; };
+		0651EB4622E82C52007C31FD /* TGMine_extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGMine_extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		0651EB4722E82C52007C31FD /* CTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMediator.m; sourceTree = "<group>"; };
+		0651EB4822E82C52007C31FD /* CTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMediator.h; sourceTree = "<group>"; };
+		A9C159A46F65BB248A7F59F8 /* Pods-TGMine_extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGMine_extension.debug.xcconfig"; path = "Target Support Files/Pods-TGMine_extension/Pods-TGMine_extension.debug.xcconfig"; sourceTree = "<group>"; };
+		B832673E072BB770ECB8E786 /* Pods-TGMine_extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGMine_extension.release.xcconfig"; path = "Target Support Files/Pods-TGMine_extension/Pods-TGMine_extension.release.xcconfig"; sourceTree = "<group>"; };
+		D1299C26EA91DECAE45A74C9 /* Pods_TGMine_extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TGMine_extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13929D082316565EDF48817F /* Pods_TGMine_extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				0651EACB22E826E6007C31FD /* TGMine_extension */,
 				0651EACA22E826E6007C31FD /* Products */,
+				292F345F5F29F2E7C5F0598A /* Pods */,
+				0E25997EEDD6DD30D8A63BCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,43 @@
 		0651EACB22E826E6007C31FD /* TGMine_extension */ = {
 			isa = PBXGroup;
 			children = (
+				0651EADE22E82B5E007C31FD /* TGMine_extension */,
 				0651EACC22E826E6007C31FD /* AppDelegate.swift */,
 				0651EACE22E826E6007C31FD /* ViewController.swift */,
 				0651EAD022E826E6007C31FD /* Main.storyboard */,
 				0651EAD322E826E7007C31FD /* Assets.xcassets */,
 				0651EAD522E826E7007C31FD /* LaunchScreen.storyboard */,
+				0651EB4822E82C52007C31FD /* CTMediator.h */,
+				0651EB4722E82C52007C31FD /* CTMediator.m */,
 				0651EAD822E826E7007C31FD /* Info.plist */,
+				0651EB4622E82C52007C31FD /* TGMine_extension-Bridging-Header.h */,
 			);
 			path = TGMine_extension;
+			sourceTree = "<group>";
+		};
+		0651EADE22E82B5E007C31FD /* TGMine_extension */ = {
+			isa = PBXGroup;
+			children = (
+				0651EB4222E82BDE007C31FD /* TGMine_extension.swift */,
+			);
+			path = TGMine_extension;
+			sourceTree = "<group>";
+		};
+		0E25997EEDD6DD30D8A63BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1299C26EA91DECAE45A74C9 /* Pods_TGMine_extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		292F345F5F29F2E7C5F0598A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9C159A46F65BB248A7F59F8 /* Pods-TGMine_extension.debug.xcconfig */,
+				B832673E072BB770ECB8E786 /* Pods-TGMine_extension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0651EADB22E826E7007C31FD /* Build configuration list for PBXNativeTarget "TGMine_extension" */;
 			buildPhases = (
+				316D40CCCFDB1BF057FAAF20 /* [CP] Check Pods Manifest.lock */,
 				0651EAC522E826E6007C31FD /* Sources */,
 				0651EAC622E826E6007C31FD /* Frameworks */,
 				0651EAC722E826E6007C31FD /* Resources */,
+				564BBD2FE1D5BD162DACC765 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +140,7 @@
 				TargetAttributes = {
 					0651EAC822E826E6007C31FD = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +175,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		316D40CCCFDB1BF057FAAF20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TGMine_extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		564BBD2FE1D5BD162DACC765 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TGMine_extension/Pods-TGMine_extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TGMine_extension/Pods-TGMine_extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TGMine_extension/Pods-TGMine_extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0651EAC522E826E6007C31FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +224,8 @@
 			files = (
 				0651EACF22E826E6007C31FD /* ViewController.swift in Sources */,
 				0651EACD22E826E6007C31FD /* AppDelegate.swift in Sources */,
+				0651EB4322E82BDE007C31FD /* TGMine_extension.swift in Sources */,
+				0651EB4922E82C53007C31FD /* CTMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +369,10 @@
 		};
 		0651EADC22E826E7007C31FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C159A46F65BB248A7F59F8 /* Pods-TGMine_extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839RTY5C9C;
 				INFOPLIST_FILE = TGMine_extension/Info.plist;
@@ -291,6 +382,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tangmengze.TGMine-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TGMine_extension/TGMine_extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +391,10 @@
 		};
 		0651EADD22E826E7007C31FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B832673E072BB770ECB8E786 /* Pods-TGMine_extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839RTY5C9C;
 				INFOPLIST_FILE = TGMine_extension/Info.plist;
@@ -309,6 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tangmengze.TGMine-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TGMine_extension/TGMine_extension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

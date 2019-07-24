@@ -1,0 +1,7 @@
+TGMine_extension.xcodeproj/xcuserdata/
+TGMine_extension.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+TGMine_extension.xcodeproj/project.xcworkspace/xcuserdata/

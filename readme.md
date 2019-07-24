@@ -1,0 +1,1 @@
+pod "TGMine_extension"
